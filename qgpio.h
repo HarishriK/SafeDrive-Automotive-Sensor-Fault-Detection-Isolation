@@ -6,7 +6,7 @@
 #include <time.h>
 #include <sys/mman.h>
 
-#define GPIO_BASE 0xFE200000UL   /* BCM2711 peripheral GPIO base */
+#define GPIO_BASE 0xFE200000UL   
 #define GPIO_LEN  0x1000
 
 static volatile uint32_t *gpio_reg;
