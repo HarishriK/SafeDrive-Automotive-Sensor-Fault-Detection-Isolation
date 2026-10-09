@@ -1,5 +1,3 @@
-/* MPU6050 test over I2C1 (SDA=GPIO2 pin3, SCL=GPIO3 pin5, VCC=3.3V, AD0=GND -> addr 0x68)
- * Uses QNX native I2C resource manager (/dev/i2c1) via devctl - no extra library. */
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
