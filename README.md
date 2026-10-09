@@ -2,11 +2,6 @@
 
 **Team Straw Hats #20, Hyderabad** · Theme: Automotive · Platform: QNX Neutrino RTOS on Raspberry Pi 4
 
-![QNX](https://img.shields.io/badge/RTOS-QNX%20Neutrino-blue)
-![Board](https://img.shields.io/badge/Board-Raspberry%20Pi%204-c51a4a)
-![Language](https://img.shields.io/badge/Language-C-informational)
-![Scheduling](https://img.shields.io/badge/Scheduling-SCHED__FIFO-success)
-
 > A vehicle that knows which sense is lying, drops it, keeps driving on the rest, and re-admits it only after it has proved itself.
 
 ---
