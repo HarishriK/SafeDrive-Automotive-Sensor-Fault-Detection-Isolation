@@ -1,5 +1,3 @@
-/* Rotary (quadrature) encoder test.  A=GPIO17 (pin11)  B=GPIO27 (pin13)  common/GND -> GND
- * Internal pull-ups enabled. Rotate the shaft; prints count + direction. Ctrl-C to quit. */
 #include "qgpio.h"
 #include <signal.h>
 #define PIN_A 17
@@ -13,7 +11,6 @@ int main(void) {
     gpio_mode(PIN_A, GPIO_IN); gpio_mode(PIN_B, GPIO_IN);
     gpio_pull(PIN_A, PULL_UP); gpio_pull(PIN_B, PULL_UP);
 
-    /* state-transition table: index = (prev<<2)|curr */
     static const int8_t tbl[16] = {0,-1,1,0, 1,0,0,-1, -1,0,0,1, 0,1,-1,0};
     int prev = (gpio_read(PIN_A) << 1) | gpio_read(PIN_B);
     long count = 0, last_print = 0;
