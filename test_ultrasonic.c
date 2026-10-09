@@ -1,5 +1,3 @@
-/* HC-SR04 test.  TRIG=GPIO23 (pin16)  ECHO=GPIO24 (pin18)
- * !! ECHO is 5V: use a divider (1k + 2k) to bring it to 3.3V !! */
 #include "qgpio.h"
 #include <unistd.h>
 #define TRIG 23
