@@ -1,5 +1,3 @@
-/* Minimal GPIO access for Raspberry Pi 4 (BCM2711) on QNX via memory-mapped registers.
- * No external library needed. Must run as root. */
 #ifndef QGPIO_H
 #define QGPIO_H
 #include <stdint.h>
