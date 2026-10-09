@@ -1,7 +1,3 @@
-/* DC motor driver test (L298N / L293D / TB6612 style: IN1, IN2, EN/PWM)
- * IN1=GPIO5 (pin29)  IN2=GPIO6 (pin31)  EN/PWM=GPIO13 (pin33)
- * Motor supply is EXTERNAL; connect driver GND to Pi GND.
- * Software PWM (~500 Hz). Lift the wheels off the ground for the first test! */
 #include "qgpio.h"
 #include <signal.h>
 #define IN1 5
